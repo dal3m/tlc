@@ -42,14 +42,14 @@ etc.
 usage
 ---
 
--g: grades
--a: attendance
--l: lucky number
--n: announcements
--w: warnings/notes.
--t: tests, homework and exams.
--c: calendar with an optional parameter of YY-MM-DD as a start of the week (has to be monday)
--h: help
+- g: grades
+- a: attendance
+- l: lucky number
+- n: announcements
+- w: warnings/notes.
+- t: tests, homework and exams.
+- c: calendar with an optional parameter of YY-MM-DD as a start of the week (has to be monday)
+- h: help
 
 the flags can not be chained together.
 
