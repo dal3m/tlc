@@ -1,0 +1,48 @@
+.Dd 11/07/25               
+.Dt tlc 1      
+.Sh NAME                 
+.Nm tlc,
+.Nm tiny librus client,
+.Nd client for the polish electronic gradebook system librus.
+.Sh SYNOPSIS             
+.Nm
+.Op Fl galnwtch              \" [-galnwtch]
+.Op Fl c Ar YY-MM-DD         \" [-c YY-MM-DD]
+.Sh DESCRIPTION          
+Small, portable client to fetch and parse information from librus synergia API.
+
+It supports the following options
+.Bl -tag -width -indent  
+.It Fl g                 
+Fetch  grades in a format of SEMESTER DATE SUBJECT: GRADE
+.It Fl a
+Fetch attendance  in a format of SEMESTER DATE SUBJECT: STATUS
+.It Fl l
+Fetch the lucky number
+.It Fl n
+Fetch school annoucments
+.It Fl w
+Fetch warnings
+.It Fl t
+Fetch tests, exams and homeworks
+.It Fl c
+fetch calendar, you can specify the start of the week in YY-MM-DD format
+.It Fl h
+display a help message.
+
+.El                     
+.Pp
+.Sh FILES               
+.Bl -tag -width "/Users/joeuser/Library/really_long_file_name" -compact
+.It Pa /tmp/*.tlc
+temporary files containg JSON.
+
+.Sh BUGS  
+.Bl -tag -width -indent
+- the a flag is very slow
+
+- sometimes it fails to parse data correctly
+
+- seems to segfault on gnu systems if no flag is supplied.
+.El
+
