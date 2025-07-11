@@ -41,6 +41,7 @@ etc.
 
 usage
 ---
+
 -g: grades
 -a: attendance
 -l: lucky number
